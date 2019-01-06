@@ -1,0 +1,1 @@
+/usr/bin/g++  -fPIC   -shared -Wl,-soname,libML16.so.1 -o ../lib/libML16.so.1.1 CMakeFiles/ML16.dir/ML16Lidar.cpp.o -lpthread /usr/local/lib/libboost_thread.so -lpthread -Wl,-rpath,/usr/local/lib: 

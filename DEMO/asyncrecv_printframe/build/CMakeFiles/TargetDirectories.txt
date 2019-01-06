@@ -1,0 +1,13 @@
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/install.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/list_install_components.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/install/strip.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/install/local.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/rebuild_cache.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/edit_cache.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src/CMakeFiles/rebuild_cache.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src/CMakeFiles/install.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src/CMakeFiles/list_install_components.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src/CMakeFiles/testprint.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src/CMakeFiles/install/local.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src/CMakeFiles/install/strip.dir
+/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src/CMakeFiles/edit_cache.dir

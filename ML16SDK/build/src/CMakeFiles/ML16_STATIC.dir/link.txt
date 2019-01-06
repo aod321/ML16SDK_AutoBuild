@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libML16.a  CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.o
+/usr/bin/ranlib ../lib/libML16.a
