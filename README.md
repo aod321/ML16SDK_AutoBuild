@@ -111,4 +111,4 @@ cd DEMO/asyncrecv_printframe/
                                 ./testprint
 ```
 
-##方法2.直接在ARM宿主机上采用本地编译的方式(编译速度可能较慢)
+## 方法2.直接在ARM宿主机上采用本地编译的方式(编译速度可能较慢)
