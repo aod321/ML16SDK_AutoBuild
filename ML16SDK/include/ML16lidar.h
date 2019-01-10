@@ -25,26 +25,6 @@ class UDP_SOCKET{
                 void clear_recv(){memset(receive_str,0,300);}
                 void end();
 };
-/*已移植PCL标准头文件，以下实现代码弃用*/
-//class PointXYZRGB{
-//
-//public:
-//friend std::ostream& operator<<(std::ostream& out,const pcl::PointXYZRGB &s);              [>对<<运算符进行重载以支持cout输出<]
-                //int x;
-                //int y;
-                //int z;
-                //float rgb;
-//
-//};
-//std::ostream& operator<<(std::ostream& out, const pcl::PointXYZRGB& s){
-    //out << s.x << " " << s.y << " " << s.z<<" "<<s.rgb;
-    //return out;
-//}
-
-
-
-
-
 
 class ML16{
         private: 
