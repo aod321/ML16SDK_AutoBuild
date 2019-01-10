@@ -2,7 +2,7 @@
 #include <sys/types.h>
 #include <boost/bind.hpp>
 #include <boost/thread/thread.hpp>
-#include <boost/asio.hpp>
+#include <boost/asio.hpp> 
 #include <iostream>
 #include <ML16lidar.h>
 
@@ -46,71 +46,10 @@ UDP_SOCKET::UDP_SOCKET(){
 
 
 
-std::string PCD::getpoints_PCDFormat(){
-
-        std::string return_string;
-        std::string Header_string;
-        std::stringstream data_Stringstream;
-
-        data_Stringstream.str("");
-        data_Stringstream.clear();
-        Header_string.clear();
-        return_string.clear();
-        if(points.size()!=0){ 
-                Header_string = get_Header();
-
-                for(int i=0;i<points.size();++i){
-                        data_Stringstream<<points[i]<<std::endl;
-                }
-
-                return_string.append(Header_string);
-                return_string.append(data_Stringstream.str());
-                points.clear();
-        }
-        return return_string;
-
-}
-
-std::string PCD::getpoints_XYZRGBFormat(){
-        std::string return_string;
-        std::stringstream S_Stringstream;
-        if(points.size()!=0){
-                for(int i=0;i<points.size();++i){
-                        S_Stringstream<<points[i]<<std::endl;
-                }
-                return_string.append(S_Stringstream.str());
-                points.clear();
-        }
-        return return_string;
-}
 
 
-std::string PCD::get_Header(){
-        std::stringstream Header_Stringstream;
-        Header_Stringstream.str("");
-        Header_Stringstream.clear();
-        Header_Stringstream<<fixstr_Header;
-        Header_Stringstream<<"WIDTH "<<WIDTH<<std::endl;
-        Header_Stringstream<<"HEIGHT "<<HEIGHT<<std::endl;
-        Header_Stringstream<<"VIEWPOINT 0 0 0 1 0 0 0"<<std::endl;
-        Header_Stringstream<<"POINTS "<<WIDTH*HEIGHT<<std::endl;
-        Header_Stringstream<<"DATA ascii"<<std::endl;
-        return Header_Stringstream.str();
-}
 
 
-PCD::PCD(){
-
-
-        fixstr_Header = "# .PCD v0.7 - Point Cloud Data file format\n";
-        fixstr_Header.append("VERSION 0.7\n");
-        fixstr_Header.append("FIELDS x y z rgb\n");
-        fixstr_Header.append("SIZE 4 4 4 4\n");
-        fixstr_Header.append("TYPE F F F F\n");
-        fixstr_Header.append("COUNT 1 1 1 1\n");
-
-
-}
 
 
 
@@ -156,8 +95,14 @@ void ML16::capture(){
 
                                 capture_finish=0;
                                 publish_pointcloud.points.clear();
-                                temp_pointcloud.WIDTH=point_count;
-                                temp_pointcloud.HEIGHT=1;
+                                temp_pointcloud.width=point_count;
+                                temp_pointcloud.height=1;
+
+                                //Specifies if all the data in points is finite (true), or whether the XYZ values of certain points might contain Inf/NaN values (false).
+                                temp_pointcloud.is_dense = false;
+                                temp_pointcloud.points.resize (temp_pointcloud.width * temp_pointcloud.height);
+
+
                                 publish_pointcloud = temp_pointcloud;
                                 capture_finish=1;
                                 temp_pointcloud.points.clear();
@@ -169,7 +114,7 @@ void ML16::capture(){
                         publish_pointcloud.points.clear();
                 
                 }
-        }
+       }
 }
 
 

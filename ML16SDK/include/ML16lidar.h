@@ -4,6 +4,7 @@
 #include <boost/asio.hpp>
 #include <sys/types.h>
 #include <pcl/point_types.h>
+#include <pcl/point_cloud.h>
 
 namespace tanway{ 
 class UDP_SOCKET{
@@ -19,16 +20,16 @@ class UDP_SOCKET{
         public:
                 unsigned char receive_str[300];
                 UDP_SOCKET();
-               void begin();
-               std::size_t get_Recv();
-               void clear_recv(){memset(receive_str,0,300);}
-               void end();
+                void begin();
+                std::size_t get_Recv();
+                void clear_recv(){memset(receive_str,0,300);}
+                void end();
 };
 /*已移植PCL标准头文件，以下实现代码弃用*/
 //class PointXYZRGB{
 //
-        //public:
-                //friend std::ostream& operator<<(std::ostream& out,const pcl::PointXYZRGB &s);              [>对<<运算符进行重载以支持cout输出<]
+//public:
+//friend std::ostream& operator<<(std::ostream& out,const pcl::PointXYZRGB &s);              [>对<<运算符进行重载以支持cout输出<]
                 //int x;
                 //int y;
                 //int z;
@@ -40,20 +41,6 @@ class UDP_SOCKET{
     //return out;
 //}
 
-class PCD{
-
-        private:
-                std::string fixstr_Header;
-                std::string get_Header();
-        public:
-                int WIDTH;
-                int HEIGHT;
-                PCD();
-                std::vector<pcl::PointXYZRGB> points;
-                std::string getpoints_PCDFormat();
-                std::string getpoints_XYZRGBFormat();
-                void clear_points(){points.clear();}
-};
 
 
 
@@ -85,7 +72,8 @@ class ML16{
                 boost::thread* thr;
                 
                 pcl::PointXYZRGB pointbase;
-                PCD temp_pointcloud;
+                pcl::PointCloud<pcl::PointXYZRGB> temp_pointcloud;
+
 
 
 
@@ -110,6 +98,6 @@ class ML16{
                 void set_Angle(int start,int end){StartAngle=start;EndAngle=end;}
                 std::string get_Mode(){return mode;}
                 int capture_finish;
-                PCD publish_pointcloud;
+                pcl::PointCloud<pcl::PointXYZRGB> publish_pointcloud;
 };
 }
