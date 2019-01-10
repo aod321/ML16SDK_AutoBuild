@@ -4,13 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/src/ML16Lidar.cpp" "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src/CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.o"
+  "/root/ML16SDK_AutoBuild/ML16SDK/src/ML16Lidar.cpp" "/root/ML16SDK_AutoBuild/ML16SDK/build/src/CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include"
+  "../include"
   )
 
 # Targets to which this target links.

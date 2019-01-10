@@ -1,4 +1,4 @@
-# Install script for directory: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK
+# Install script for directory: /root/ML16SDK_AutoBuild/ML16SDK
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src/cmake_install.cmake")
+  include("/root/ML16SDK_AutoBuild/ML16SDK/build/src/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/ML16SDK_AutoBuild/ML16SDK/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

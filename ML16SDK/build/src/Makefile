@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK
+CMAKE_SOURCE_DIR = /root/ML16SDK_AutoBuild/ML16SDK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build
+CMAKE_BINARY_DIR = /root/ML16SDK_AutoBuild/ML16SDK/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,8 +80,8 @@ list_install_components/fast: list_install_components
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -124,14 +124,14 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src/CMakeFiles/progress.marks
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles 0
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/ML16SDK_AutoBuild/ML16SDK/build/CMakeFiles /root/ML16SDK_AutoBuild/ML16SDK/build/src/CMakeFiles/progress.marks
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ML16SDK_AutoBuild/ML16SDK/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/ML16.dir/rule:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ML16.dir/rule
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ML16.dir/rule
 .PHONY : src/CMakeFiles/ML16.dir/rule
 
 # Convenience name for target.
@@ -166,12 +166,12 @@ ML16: src/CMakeFiles/ML16.dir/rule
 
 # fast build rule for target.
 ML16/fast:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16.dir/build.make src/CMakeFiles/ML16.dir/build
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16.dir/build.make src/CMakeFiles/ML16.dir/build
 .PHONY : ML16/fast
 
 # Convenience name for target.
 src/CMakeFiles/ML16_STATIC.dir/rule:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ML16_STATIC.dir/rule
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/ML16_STATIC.dir/rule
 .PHONY : src/CMakeFiles/ML16_STATIC.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ ML16_STATIC: src/CMakeFiles/ML16_STATIC.dir/rule
 
 # fast build rule for target.
 ML16_STATIC/fast:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16_STATIC.dir/build.make src/CMakeFiles/ML16_STATIC.dir/build
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16_STATIC.dir/build.make src/CMakeFiles/ML16_STATIC.dir/build
 .PHONY : ML16_STATIC/fast
 
 ML16Lidar.o: ML16Lidar.cpp.o
@@ -190,8 +190,8 @@ ML16Lidar.o: ML16Lidar.cpp.o
 
 # target to build an object file
 ML16Lidar.cpp.o:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16.dir/build.make src/CMakeFiles/ML16.dir/ML16Lidar.cpp.o
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16_STATIC.dir/build.make src/CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.o
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16.dir/build.make src/CMakeFiles/ML16.dir/ML16Lidar.cpp.o
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16_STATIC.dir/build.make src/CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.o
 .PHONY : ML16Lidar.cpp.o
 
 ML16Lidar.i: ML16Lidar.cpp.i
@@ -200,8 +200,8 @@ ML16Lidar.i: ML16Lidar.cpp.i
 
 # target to preprocess a source file
 ML16Lidar.cpp.i:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16.dir/build.make src/CMakeFiles/ML16.dir/ML16Lidar.cpp.i
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16_STATIC.dir/build.make src/CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.i
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16.dir/build.make src/CMakeFiles/ML16.dir/ML16Lidar.cpp.i
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16_STATIC.dir/build.make src/CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.i
 .PHONY : ML16Lidar.cpp.i
 
 ML16Lidar.s: ML16Lidar.cpp.s
@@ -210,8 +210,8 @@ ML16Lidar.s: ML16Lidar.cpp.s
 
 # target to generate assembly for a file
 ML16Lidar.cpp.s:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16.dir/build.make src/CMakeFiles/ML16.dir/ML16Lidar.cpp.s
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16_STATIC.dir/build.make src/CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.s
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16.dir/build.make src/CMakeFiles/ML16.dir/ML16Lidar.cpp.s
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(MAKE) -f src/CMakeFiles/ML16_STATIC.dir/build.make src/CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.s
 .PHONY : ML16Lidar.cpp.s
 
 # Help Target
@@ -242,6 +242,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

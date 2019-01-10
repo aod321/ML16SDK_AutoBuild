@@ -1,11 +1,14 @@
-#include "ML16lidar.h"
 #include <unistd.h>
 #include <sys/types.h>
 #include <boost/bind.hpp>
 #include <boost/thread/thread.hpp>
 #include <boost/asio.hpp>
 #include <iostream>
+#include <ML16lidar.h>
+
 using namespace boost::asio;
+using namespace tanway;
+
 void UDP_SOCKET::begin(){
         try{
                 udp_socketptr = new ip::udp::socket(io_serviceA); 
@@ -40,10 +43,6 @@ UDP_SOCKET::UDP_SOCKET(){
 
 
 
-std::ostream& operator<<(std::ostream& out, const Pointxyzrgb& s){
-    out << s.x << " " << s.y << " " << s.z<<" "<<s.rgb;
-    return out;
-}
 
 
 

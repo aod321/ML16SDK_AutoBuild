@@ -3,7 +3,9 @@
 #include <boost/thread/thread.hpp>
 #include <boost/asio.hpp>
 #include <sys/types.h>
+#include <pcl/point_types.h>
 
+namespace tanway{ 
 class UDP_SOCKET{
 
         private: 
@@ -22,17 +24,21 @@ class UDP_SOCKET{
                void clear_recv(){memset(receive_str,0,300);}
                void end();
 };
-class Pointxyzrgb{
-
-        public:
-                friend std::ostream& operator<<(std::ostream& out,const Pointxyzrgb &s);              /*对<<运算符进行重载以支持cout输出*/
-                int x;
-                int y;
-                int z;
-                float rgb;
-
-};
-
+/*已移植PCL标准头文件，以下实现代码弃用*/
+//class PointXYZRGB{
+//
+        //public:
+                //friend std::ostream& operator<<(std::ostream& out,const pcl::PointXYZRGB &s);              [>对<<运算符进行重载以支持cout输出<]
+                //int x;
+                //int y;
+                //int z;
+                //float rgb;
+//
+//};
+//std::ostream& operator<<(std::ostream& out, const pcl::PointXYZRGB& s){
+    //out << s.x << " " << s.y << " " << s.z<<" "<<s.rgb;
+    //return out;
+//}
 
 class PCD{
 
@@ -43,7 +49,7 @@ class PCD{
                 int WIDTH;
                 int HEIGHT;
                 PCD();
-                std::vector<Pointxyzrgb> points;
+                std::vector<pcl::PointXYZRGB> points;
                 std::string getpoints_PCDFormat();
                 std::string getpoints_XYZRGBFormat();
                 void clear_points(){points.clear();}
@@ -78,7 +84,7 @@ class ML16{
                 UDP_SOCKET udp;
                 boost::thread* thr;
                 
-                Pointxyzrgb pointbase;
+                pcl::PointXYZRGB pointbase;
                 PCD temp_pointcloud;
 
 
@@ -106,3 +112,4 @@ class ML16{
                 int capture_finish;
                 PCD publish_pointcloud;
 };
+}

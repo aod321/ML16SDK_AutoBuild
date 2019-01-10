@@ -1,4 +1,4 @@
-# Install script for directory: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/src
+# Install script for directory: /root/ML16SDK_AutoBuild/ML16SDK/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,9 +46,9 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/lib/libML16.so.1.1"
-    "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/lib/libML16.so.1"
-    "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/lib/libML16.so"
+    "/root/ML16SDK_AutoBuild/ML16SDK/build/lib/libML16.so.1.1"
+    "/root/ML16SDK_AutoBuild/ML16SDK/build/lib/libML16.so.1"
+    "/root/ML16SDK_AutoBuild/ML16SDK/build/lib/libML16.so"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libML16.so.1.1"
@@ -69,10 +69,10 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/lib/libML16.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/root/ML16SDK_AutoBuild/ML16SDK/build/lib/libML16.a")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ML16" TYPE FILE FILES "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/src/ML16lidar.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ML16" TYPE FILE FILES "/root/ML16SDK_AutoBuild/ML16SDK/include/ML16lidar.h")
 endif()
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK
+CMAKE_SOURCE_DIR = /root/ML16SDK_AutoBuild/ML16SDK
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build
+CMAKE_BINARY_DIR = /root/ML16SDK_AutoBuild/ML16SDK/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/ML16.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/ML16.dir/flags.make
 
 src/CMakeFiles/ML16.dir/ML16Lidar.cpp.o: src/CMakeFiles/ML16.dir/flags.make
 src/CMakeFiles/ML16.dir/ML16Lidar.cpp.o: ../src/ML16Lidar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/ML16.dir/ML16Lidar.cpp.o"
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src && /usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ML16.dir/ML16Lidar.cpp.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/src/ML16Lidar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/ML16SDK_AutoBuild/ML16SDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/ML16.dir/ML16Lidar.cpp.o"
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build/src && /usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ML16.dir/ML16Lidar.cpp.o -c /root/ML16SDK_AutoBuild/ML16SDK/src/ML16Lidar.cpp
 
 src/CMakeFiles/ML16.dir/ML16Lidar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ML16.dir/ML16Lidar.cpp.i"
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/src/ML16Lidar.cpp > CMakeFiles/ML16.dir/ML16Lidar.cpp.i
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/ML16SDK_AutoBuild/ML16SDK/src/ML16Lidar.cpp > CMakeFiles/ML16.dir/ML16Lidar.cpp.i
 
 src/CMakeFiles/ML16.dir/ML16Lidar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ML16.dir/ML16Lidar.cpp.s"
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/src/ML16Lidar.cpp -o CMakeFiles/ML16.dir/ML16Lidar.cpp.s
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/ML16SDK_AutoBuild/ML16SDK/src/ML16Lidar.cpp -o CMakeFiles/ML16.dir/ML16Lidar.cpp.s
 
 src/CMakeFiles/ML16.dir/ML16Lidar.cpp.o.requires:
 
@@ -93,9 +93,9 @@ lib/libML16.so.1.1: src/CMakeFiles/ML16.dir/build.make
 lib/libML16.so.1.1: /usr/local/lib/libboost_thread.so
 lib/libML16.so.1.1: /usr/lib/x86_64-linux-gnu/libpthread.so
 lib/libML16.so.1.1: src/CMakeFiles/ML16.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library ../lib/libML16.so"
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ML16.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src && $(CMAKE_COMMAND) -E cmake_symlink_library ../lib/libML16.so.1.1 ../lib/libML16.so.1 ../lib/libML16.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/ML16SDK_AutoBuild/ML16SDK/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library ../lib/libML16.so"
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ML16.dir/link.txt --verbose=$(VERBOSE)
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build/src && $(CMAKE_COMMAND) -E cmake_symlink_library ../lib/libML16.so.1.1 ../lib/libML16.so.1 ../lib/libML16.so
 
 lib/libML16.so.1: lib/libML16.so.1.1
 	@$(CMAKE_COMMAND) -E touch_nocreate lib/libML16.so.1
@@ -113,10 +113,10 @@ src/CMakeFiles/ML16.dir/requires: src/CMakeFiles/ML16.dir/ML16Lidar.cpp.o.requir
 .PHONY : src/CMakeFiles/ML16.dir/requires
 
 src/CMakeFiles/ML16.dir/clean:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src && $(CMAKE_COMMAND) -P CMakeFiles/ML16.dir/cmake_clean.cmake
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build/src && $(CMAKE_COMMAND) -P CMakeFiles/ML16.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/ML16.dir/clean
 
 src/CMakeFiles/ML16.dir/depend:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/src /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/src/CMakeFiles/ML16.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/ML16SDK_AutoBuild/ML16SDK/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/ML16SDK_AutoBuild/ML16SDK /root/ML16SDK_AutoBuild/ML16SDK/src /root/ML16SDK_AutoBuild/ML16SDK/build /root/ML16SDK_AutoBuild/ML16SDK/build/src /root/ML16SDK_AutoBuild/ML16SDK/build/src/CMakeFiles/ML16.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/ML16.dir/depend
 

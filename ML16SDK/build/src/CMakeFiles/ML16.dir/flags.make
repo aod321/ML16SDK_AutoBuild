@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DML16_EXPORTS
 
-CXX_INCLUDES = -I/usr/local/include 
+CXX_INCLUDES = -I/usr/local/include -I/root/ML16SDK_AutoBuild/ML16SDK/include 
 

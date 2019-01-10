@@ -1,6 +1,8 @@
 FIND_PACKAGE(Boost REQUIRED COMPONENTS 
         thread)
 include_directories(${Boost_INCLUDE_DIRS})
+include_directories("${CMAKE_SOURCE_DIR}/include")
+message("${CMAKE_SOURCE_DIR}")
 message("${Boost_INCLUDE_DIRS}")
 message("${Boost_LIBRARIES}")
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
@@ -20,4 +22,4 @@ INSTALL(TARGETS ML16 ML16_STATIC
         ARCHIVE DESTINATION lib
         )
 
-INSTALL(FILES ML16lidar.h DESTINATION include/ML16)
+INSTALL(FILES ${CMAKE_SOURCE_DIR}/include/ML16lidar.h DESTINATION include/ML16)

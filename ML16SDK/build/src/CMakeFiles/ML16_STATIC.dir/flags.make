@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include 
+CXX_INCLUDES = -I/usr/local/include -I/root/ML16SDK_AutoBuild/ML16SDK/include 
 
