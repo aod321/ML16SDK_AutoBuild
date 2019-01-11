@@ -14,7 +14,7 @@ if [ "$user" != 'root' ]; then
 fi
 
 if [ ! -n "$1" ] ;then
-        echo "[Tanway ML16 Warning] choose 'arm' or 'x86'"
+        echo "[Tanway ML16 Warning] choose 'arm' ,'aarch64'(or 'arm64'),'x86'"
 fi 
 while [ $# -gt 0 ]; do
         case "$1" in
@@ -28,6 +28,12 @@ while [ $# -gt 0 ]; do
                         echo "Installing..."
                         $sh_c "cp -vr ./x86/include /usr/local/"
                         $sh_c "cp -vr ./x86/lib /usr/local/"
+                        echo "OK"
+
+                        ;;
+                arm64|aarch)
+                        echo "Installing..."
+                        $sh_c "cp -vr ./aarch64/boost /opt/boost"
                         echo "OK"
 
                         ;;
