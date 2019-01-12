@@ -35,6 +35,22 @@ while [ $# -gt 0 ]; do
                         echo "OK"
 
                         ;;
+                arm64(aarch64)
+                echo "Target Compile:aarch64(arm64)"
+
+                        export ML16_CROSSCOMPILLING=1
+                        export CMAKE_INCLUDE_PATH=/opt/ML16/include/ML16:/opt/boost/include/
+                        export CMAKE_LIBRARY_PATH=/opt/ML16/lib:/opt/boost/lib
+                        rm -rf build/
+                        mkdir build/
+                        cd build
+                        cmake -DCMAKE_INSTALL_PREFIX=../arm-bin -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-toolchain.cmake ..
+                        make
+                        make install
+
+                        echo "OK"
+
+                        ;;
                 local)
                         echo "Target Compile:local"
 
