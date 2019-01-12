@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../lib/libML16.a  CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.o
-/usr/bin/ranlib ../lib/libML16.a
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-ar qc ../lib/libML16.a  CMakeFiles/ML16_STATIC.dir/ML16Lidar.cpp.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-ranlib ../lib/libML16.a

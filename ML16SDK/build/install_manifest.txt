@@ -1,5 +1,5 @@
-/usr/local/lib/libML16.so.1.1
-/usr/local/lib/libML16.so.1
-/usr/local/lib/libML16.so
-/usr/local/lib/libML16.a
-/usr/local/include/ML16/ML16lidar.h
+/opt/ML16/lib/libML16.so.1.1
+/opt/ML16/lib/libML16.so.1
+/opt/ML16/lib/libML16.so
+/opt/ML16/lib/libML16.a
+/opt/ML16/include/ML16/ML16lidar.h

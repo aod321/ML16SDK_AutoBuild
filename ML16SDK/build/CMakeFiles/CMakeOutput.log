@@ -1,128 +1,127 @@
 The target system is: Linux -  - 
 The host system is: Linux - 4.15.0-43-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/gcc 
-Build flags: 
-Id flags: 
+Compiler: /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc 
+Build flags: -march=armv8-a;-mtune=cortex-a57.cortex-a53
+Id flags: -c 
 
 The output was:
 0
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
 
-The C compiler identification is GNU, found in "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/3.5.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.o"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/g++ 
-Build flags: 
-Id flags: 
+Compiler: /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ 
+Build flags: -march=armv8-a;-mtune=cortex-a57.cortex-a53
+Id flags: -c 
 
 The output was:
 0
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
 
-The CXX compiler identification is GNU, found in "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.o"
 
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2e506/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2e506.dir/build.make CMakeFiles/cmTC_2e506.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ea3d3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ea3d3.dir/build.make CMakeFiles/cmTC_ea3d3.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2e506.dir/testCCompiler.c.o
-/usr/bin/gcc     -o CMakeFiles/cmTC_2e506.dir/testCCompiler.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_2e506
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e506.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_2e506.dir/testCCompiler.c.o  -o cmTC_2e506 -rdynamic 
+Building C object CMakeFiles/cmTC_ea3d3.dir/testCCompiler.c.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_ea3d3.dir/testCCompiler.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ea3d3
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea3d3.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_ea3d3.dir/testCCompiler.c.o  -o cmTC_ea3d3 
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6909a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6909a.dir/build.make CMakeFiles/cmTC_6909a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_bb1f1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bb1f1.dir/build.make CMakeFiles/cmTC_bb1f1.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6909a.dir/CMakeCCompilerABI.c.o
-/usr/bin/gcc     -o CMakeFiles/cmTC_6909a.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_6909a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6909a.dir/link.txt --verbose=1
-/usr/bin/gcc      -v CMakeFiles/cmTC_6909a.dir/CMakeCCompilerABI.c.o  -o cmTC_6909a -rdynamic  
+Building C object CMakeFiles/cmTC_bb1f1.dir/CMakeCCompilerABI.c.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_bb1f1.dir/CMakeCCompilerABI.c.o   -c /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_bb1f1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb1f1.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -v -rdynamic CMakeFiles/cmTC_bb1f1.dir/CMakeCCompilerABI.c.o  -o cmTC_bb1f1 
 Using built-in specs.
-COLLECT_GCC=/usr/bin/gcc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.11' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+COLLECT_GCC=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc
+COLLECT_LTO_WRAPPER=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/lto-wrapper
+Target: aarch64-poky-linux
+Configured with: ../../../../../../work-shared/gcc-7.3.0-r0/gcc-7.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr --bindir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/com --localstatedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/var --libdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --enable-lto --enable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/7.3.0 --with-build-time-tools=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --without-long-double-128 --enable-poison-system-directories --with-mpfr=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --with-mpc=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --disable-static --enable-nls --enable-initfini-array --enable-__cxa_atexit
 Thread model: posix
-gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.11) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6909a' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvaIEl3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_6909a /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_6909a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+gcc version 7.3.0 (GCC) 
+COMPILER_PATH=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_bb1f1' '-mlittle-endian' '-mabi=lp64'
+ /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/collect2 -plugin /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/liblto_plugin.so -plugin-opt=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccotRjak.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_bb1f1 /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crt1.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crti.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtbegin.o -L/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0 -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0 -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_bb1f1.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtend.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_bb1f1' '-mlittle-endian' '-mabi=lp64'
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line regex: [^( *|.*[/\])(CMAKE_LINKER-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6909a/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6909a.dir/build.make CMakeFiles/cmTC_6909a.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_bb1f1/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_bb1f1.dir/build.make CMakeFiles/cmTC_bb1f1.dir/build]
   ignore line: [make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_6909a.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/gcc     -o CMakeFiles/cmTC_6909a.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_6909a]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6909a.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/gcc      -v CMakeFiles/cmTC_6909a.dir/CMakeCCompilerABI.c.o  -o cmTC_6909a -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTC_bb1f1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_bb1f1.dir/CMakeCCompilerABI.c.o   -c /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_bb1f1]
+  ignore line: [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb1f1.dir/link.txt --verbose=1]
+  ignore line: [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -v -rdynamic CMakeFiles/cmTC_bb1f1.dir/CMakeCCompilerABI.c.o  -o cmTC_bb1f1 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/gcc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.11' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_GCC=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/lto-wrapper]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-7.3.0-r0/gcc-7.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr --bindir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/com --localstatedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/var --libdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --enable-lto --enable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/7.3.0 --with-build-time-tools=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --without-long-double-128 --enable-poison-system-directories --with-mpfr=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --with-mpc=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --disable-static --enable-nls --enable-initfini-array --enable-__cxa_atexit]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.11) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6909a' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvaIEl3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_6909a /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_6909a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_bb1f1' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/collect2 -plugin /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/liblto_plugin.so -plugin-opt=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccotRjak.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_bb1f1 /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crt1.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crti.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtbegin.o -L/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0 -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0 -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_bb1f1.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtend.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crtn.o]
+    arg [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccvaIEl3.res] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccotRjak.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--sysroot=/] ==> ignore
+    arg [--sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
     arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-zrelro] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_6909a] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_6909a.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTC_bb1f1] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crt1.o] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crti.o] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtbegin.o] ==> ignore
+    arg [-L/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0] ==> dir [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0]
+    arg [-L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib] ==> dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib]
+    arg [-L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0] ==> dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0]
+    arg [-L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib] ==> dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [CMakeFiles/cmTC_bb1f1.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -132,22 +131,18 @@ Parsed C implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtend.o] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crtn.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  collapse library dir [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0] ==> [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0]
+  collapse library dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib] ==> [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib]
+  collapse library dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0] ==> [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0]
+  collapse library dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib] ==> [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib]
   implicit libs: [c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0;/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib;/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0;/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib]
   implicit fwks: []
 
 
@@ -156,14 +151,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_75276/fast"
-/usr/bin/make -f CMakeFiles/cmTC_75276.dir/build.make CMakeFiles/cmTC_75276.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_4fa33/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4fa33.dir/build.make CMakeFiles/cmTC_4fa33.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_75276.dir/feature_tests.c.o
-/usr/bin/gcc    -std=c11 -o CMakeFiles/cmTC_75276.dir/feature_tests.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_75276
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75276.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_75276.dir/feature_tests.c.o  -o cmTC_75276 -rdynamic 
+Building C object CMakeFiles/cmTC_4fa33.dir/feature_tests.c.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -std=c11 -o CMakeFiles/cmTC_4fa33.dir/feature_tests.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_4fa33
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fa33.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_4fa33.dir/feature_tests.c.o  -o cmTC_4fa33 
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
@@ -176,14 +171,14 @@ make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2f456/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2f456.dir/build.make CMakeFiles/cmTC_2f456.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6ebcd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6ebcd.dir/build.make CMakeFiles/cmTC_6ebcd.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2f456.dir/feature_tests.c.o
-/usr/bin/gcc    -std=c99 -o CMakeFiles/cmTC_2f456.dir/feature_tests.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_2f456
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f456.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_2f456.dir/feature_tests.c.o  -o cmTC_2f456 -rdynamic 
+Building C object CMakeFiles/cmTC_6ebcd.dir/feature_tests.c.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -std=c99 -o CMakeFiles/cmTC_6ebcd.dir/feature_tests.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_6ebcd
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ebcd.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_6ebcd.dir/feature_tests.c.o  -o cmTC_6ebcd 
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
@@ -196,14 +191,14 @@ make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d9748/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d9748.dir/build.make CMakeFiles/cmTC_d9748.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_5aca2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5aca2.dir/build.make CMakeFiles/cmTC_5aca2.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d9748.dir/feature_tests.c.o
-/usr/bin/gcc    -std=c90 -o CMakeFiles/cmTC_d9748.dir/feature_tests.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_d9748
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9748.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_d9748.dir/feature_tests.c.o  -o cmTC_d9748 -rdynamic 
+Building C object CMakeFiles/cmTC_5aca2.dir/feature_tests.c.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -std=c90 -o CMakeFiles/cmTC_5aca2.dir/feature_tests.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_5aca2
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5aca2.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_5aca2.dir/feature_tests.c.o  -o cmTC_5aca2 
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
@@ -214,100 +209,99 @@ make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4670b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4670b.dir/build.make CMakeFiles/cmTC_4670b.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c6704/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c6704.dir/build.make CMakeFiles/cmTC_c6704.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4670b.dir/testCXXCompiler.cxx.o
-/usr/bin/g++      -o CMakeFiles/cmTC_4670b.dir/testCXXCompiler.cxx.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_4670b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4670b.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_4670b.dir/testCXXCompiler.cxx.o  -o cmTC_4670b -rdynamic 
+Building CXX object CMakeFiles/cmTC_c6704.dir/testCXXCompiler.cxx.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux    -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_c6704.dir/testCXXCompiler.cxx.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_c6704
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6704.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_c6704.dir/testCXXCompiler.cxx.o  -o cmTC_c6704 
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4cac3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4cac3.dir/build.make CMakeFiles/cmTC_4cac3.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f3a47/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f3a47.dir/build.make CMakeFiles/cmTC_f3a47.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4cac3.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/g++      -o CMakeFiles/cmTC_4cac3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_4cac3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4cac3.dir/link.txt --verbose=1
-/usr/bin/g++       -v CMakeFiles/cmTC_4cac3.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4cac3 -rdynamic  
+Building CXX object CMakeFiles/cmTC_f3a47.dir/CMakeCXXCompilerABI.cpp.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux    -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_f3a47.dir/CMakeCXXCompilerABI.cpp.o -c /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_f3a47
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3a47.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -v -rdynamic CMakeFiles/cmTC_f3a47.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f3a47 
 Using built-in specs.
-COLLECT_GCC=/usr/bin/g++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.11' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+COLLECT_GCC=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
+COLLECT_LTO_WRAPPER=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/lto-wrapper
+Target: aarch64-poky-linux
+Configured with: ../../../../../../work-shared/gcc-7.3.0-r0/gcc-7.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr --bindir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/com --localstatedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/var --libdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --enable-lto --enable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/7.3.0 --with-build-time-tools=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --without-long-double-128 --enable-poison-system-directories --with-mpfr=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --with-mpc=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --disable-static --enable-nls --enable-initfini-array --enable-__cxa_atexit
 Thread model: posix
-gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.11) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4cac3' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOylvvr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_4cac3 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_4cac3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+gcc version 7.3.0 (GCC) 
+COMPILER_PATH=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
+LIBRARY_PATH=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_f3a47' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/collect2 -plugin /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/liblto_plugin.so -plugin-opt=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccN78qLH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_f3a47 /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crt1.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crti.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtbegin.o -L/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0 -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0 -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_f3a47.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtend.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_f3a47' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line regex: [^( *|.*[/\])(CMAKE_LINKER-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_4cac3/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_4cac3.dir/build.make CMakeFiles/cmTC_4cac3.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f3a47/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f3a47.dir/build.make CMakeFiles/cmTC_f3a47.dir/build]
   ignore line: [make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_4cac3.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/g++      -o CMakeFiles/cmTC_4cac3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_4cac3]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4cac3.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/g++       -v CMakeFiles/cmTC_4cac3.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_4cac3 -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_f3a47.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux    -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_f3a47.dir/CMakeCXXCompilerABI.cpp.o -c /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_f3a47]
+  ignore line: [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3a47.dir/link.txt --verbose=1]
+  ignore line: [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -v -rdynamic CMakeFiles/cmTC_f3a47.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f3a47 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/g++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 5.4.0-6ubuntu1~16.04.11' --with-bugurl=file:///usr/share/doc/gcc-5/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-5 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-5-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-5-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-5-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [COLLECT_GCC=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/lto-wrapper]
+  ignore line: [Target: aarch64-poky-linux]
+  ignore line: [Configured with: ../../../../../../work-shared/gcc-7.3.0-r0/gcc-7.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-linux --target=aarch64-poky-linux --prefix=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr --exec_prefix=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr --bindir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --sbindir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux --libexecdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux --datadir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share --sysconfdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/etc --sharedstatedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/com --localstatedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/var --libdir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux --includedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/include --oldincludedir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/include --infodir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/info --mandir=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=aarch64-poky-linux- --without-local-prefix --enable-lto --enable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/7.3.0 --with-build-time-tools=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot-native/usr/aarch64-poky-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --without-long-double-128 --enable-poison-system-directories --with-mpfr=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --with-mpc=/media/rcar/BSP/Yocto_3.9.0_REL/build/tmp/work/x86_64-nativesdk-pokysdk-linux/gcc-cross-canadian-aarch64/7.3.0-r0/recipe-sysroot --disable-static --enable-nls --enable-initfini-array --enable-__cxa_atexit]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.11) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4cac3' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOylvvr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_4cac3 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_4cac3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
+  ignore line: [LIBRARY_PATH=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/:/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux' '-O2' '-pipe' '-g' '-feliminate-unused-debug-types' '-v' '-rdynamic' '-o' 'cmTC_f3a47' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/collect2 -plugin /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/liblto_plugin.so -plugin-opt=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccN78qLH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_f3a47 /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crt1.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crti.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtbegin.o -L/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0 -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0 -L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib -O1 --hash-style=gnu --as-needed CMakeFiles/cmTC_f3a47.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtend.o /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crtn.o]
+    arg [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccOylvvr.res] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccN78qLH.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--sysroot=/] ==> ignore
+    arg [--sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
     arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-zrelro] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_4cac3] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_4cac3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_f3a47] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crt1.o] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crti.o] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtbegin.o] ==> ignore
+    arg [-L/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0] ==> dir [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0]
+    arg [-L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib] ==> dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib]
+    arg [-L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0] ==> dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0]
+    arg [-L/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib] ==> dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib]
+    arg [-O1] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [CMakeFiles/cmTC_f3a47.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -315,38 +309,107 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0/crtend.o] ==> ignore
+    arg [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/crtn.o] ==> ignore
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5] ==> [/usr/lib/gcc/x86_64-linux-gnu/5]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> [/usr/lib]
+  collapse library dir [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0] ==> [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0]
+  collapse library dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib] ==> [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib]
+  collapse library dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0] ==> [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0]
+  collapse library dir [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib] ==> [/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib]
   implicit libs: [stdc++;m;c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0;/opt/poky/2.4.2/sysroots/aarch64-poky-linux/lib;/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/aarch64-poky-linux/7.3.0;/opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib]
   implicit fwks: []
 
 
 
 
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ccff0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ccff0.dir/build.make CMakeFiles/cmTC_ccff0.dir/build
+make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ccff0.dir/feature_tests.cxx.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux    -O2 -pipe -g -feliminate-unused-debug-types    -std=c++1z -o CMakeFiles/cmTC_ccff0.dir/feature_tests.cxx.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ccff0
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccff0.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_ccff0.dir/feature_tests.cxx.o  -o cmTC_ccff0 
+make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f783e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f783e.dir/build.make CMakeFiles/cmTC_f783e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1ce5f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1ce5f.dir/build.make CMakeFiles/cmTC_1ce5f.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f783e.dir/feature_tests.cxx.o
-/usr/bin/g++     -std=c++14 -o CMakeFiles/cmTC_f783e.dir/feature_tests.cxx.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f783e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f783e.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_f783e.dir/feature_tests.cxx.o  -o cmTC_f783e -rdynamic 
+Building CXX object CMakeFiles/cmTC_1ce5f.dir/feature_tests.cxx.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux    -O2 -pipe -g -feliminate-unused-debug-types    -std=c++14 -o CMakeFiles/cmTC_1ce5f.dir/feature_tests.cxx.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_1ce5f
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ce5f.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_1ce5f.dir/feature_tests.cxx.o  -o cmTC_1ce5f 
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
@@ -412,14 +475,14 @@ make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_45143/fast"
-/usr/bin/make -f CMakeFiles/cmTC_45143.dir/build.make CMakeFiles/cmTC_45143.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7ea24/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7ea24.dir/build.make CMakeFiles/cmTC_7ea24.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_45143.dir/feature_tests.cxx.o
-/usr/bin/g++     -std=c++11 -o CMakeFiles/cmTC_45143.dir/feature_tests.cxx.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_45143
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45143.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_45143.dir/feature_tests.cxx.o  -o cmTC_45143 -rdynamic 
+Building CXX object CMakeFiles/cmTC_7ea24.dir/feature_tests.cxx.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux    -O2 -pipe -g -feliminate-unused-debug-types    -std=c++11 -o CMakeFiles/cmTC_7ea24.dir/feature_tests.cxx.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7ea24
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ea24.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_7ea24.dir/feature_tests.cxx.o  -o cmTC_7ea24 
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
@@ -485,14 +548,14 @@ make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f2033/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f2033.dir/build.make CMakeFiles/cmTC_f2033.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_63900/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63900.dir/build.make CMakeFiles/cmTC_63900.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f2033.dir/feature_tests.cxx.o
-/usr/bin/g++     -std=c++98 -o CMakeFiles/cmTC_f2033.dir/feature_tests.cxx.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f2033
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2033.dir/link.txt --verbose=1
-/usr/bin/g++        CMakeFiles/cmTC_f2033.dir/feature_tests.cxx.o  -o cmTC_f2033 -rdynamic 
+Building CXX object CMakeFiles/cmTC_63900.dir/feature_tests.cxx.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux    -O2 -pipe -g -feliminate-unused-debug-types    -std=c++98 -o CMakeFiles/cmTC_63900.dir/feature_tests.cxx.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_63900
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63900.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux  -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_63900.dir/feature_tests.cxx.o  -o cmTC_63900 
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
@@ -556,28 +619,28 @@ make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_03867/fast"
-/usr/bin/make -f CMakeFiles/cmTC_03867.dir/build.make CMakeFiles/cmTC_03867.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_097ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_097ff.dir/build.make CMakeFiles/cmTC_097ff.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_03867.dir/CheckIncludeFile.c.o
-/usr/bin/gcc     -o CMakeFiles/cmTC_03867.dir/CheckIncludeFile.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_03867
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03867.dir/link.txt --verbose=1
-/usr/bin/gcc       CMakeFiles/cmTC_03867.dir/CheckIncludeFile.c.o  -o cmTC_03867 -rdynamic 
+Building C object CMakeFiles/cmTC_097ff.dir/CheckIncludeFile.c.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types    -o CMakeFiles/cmTC_097ff.dir/CheckIncludeFile.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_097ff
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_097ff.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux -O2 -pipe -g -feliminate-unused-debug-types   -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_097ff.dir/CheckIncludeFile.c.o  -o cmTC_097ff 
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_47f93/fast"
-/usr/bin/make -f CMakeFiles/cmTC_47f93.dir/build.make CMakeFiles/cmTC_47f93.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_481b5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_481b5.dir/build.make CMakeFiles/cmTC_481b5.dir/build
 make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_47f93.dir/CheckFunctionExists.c.o
-/usr/bin/gcc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_47f93.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_47f93
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47f93.dir/link.txt --verbose=1
-/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_47f93.dir/CheckFunctionExists.c.o  -o cmTC_47f93 -rdynamic -lpthread 
+Building C object CMakeFiles/cmTC_481b5.dir/CheckFunctionExists.c.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux   -O2 -pipe -g -feliminate-unused-debug-types -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_481b5.dir/CheckFunctionExists.c.o   -c /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/share/cmake-3.8/Modules/CheckFunctionExists.c
+Linking C executable cmTC_481b5
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_481b5.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux -O2 -pipe -g -feliminate-unused-debug-types -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed  -rdynamic CMakeFiles/cmTC_481b5.dir/CheckFunctionExists.c.o  -o cmTC_481b5 -lpthread 
 make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/ML16SDK/build/CMakeFiles/CMakeTmp'
 
 

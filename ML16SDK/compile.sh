@@ -31,6 +31,20 @@ while [ $# -gt 0 ]; do
                         echo "OK"
 
                         ;;
+                arm64|aarch64)
+                        echo "Target Compile:aarch64(arm64)"
+
+                        rm -rf build/
+                        mkdir build/
+                        cd build
+                        cmake -DCMAKE_INSTALL_PREFIX=/opt/ML16 -DCMAKE_TOOLCHAIN_FILE=../toolchains/aarch64-linux-toolchain.cmake ..
+
+                        make
+                        $sh_c "make install"
+
+                        echo "OK"
+
+                        ;;
                 local)
                         echo "Target Compile:local"
 
