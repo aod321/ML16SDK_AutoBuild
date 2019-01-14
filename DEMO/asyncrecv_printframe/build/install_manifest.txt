@@ -1,2 +1,0 @@
-/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/arm-bin/bin/testprint-1.1
-/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/arm-bin/bin/testprint

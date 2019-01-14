@@ -1,8 +1,8 @@
-# Install script for directory: /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/src
+# Install script for directory: /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/arm-bin")
+  set(CMAKE_INSTALL_PREFIX "/home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/arm-bin")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,8 +45,8 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES
-    "/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/bin/testprint-1.1"
-    "/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/bin/testprint"
+    "/home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/bin/testprint-1.1"
+    "/home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/bin/testprint"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/testprint-1.1"
@@ -59,7 +59,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
            OLD_RPATH "/opt/boost/lib:/opt/ML16/lib:"
            NEW_RPATH "/opt/boost/lib:/opt/ML16/lib")
       if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/usr/bin/arm-linux-gnueabihf-strip" "${file}")
+        execute_process(COMMAND "/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-strip" "${file}")
       endif()
     endif()
   endforeach()

@@ -35,7 +35,7 @@ while [ $# -gt 0 ]; do
                         echo "OK"
 
                         ;;
-                arm64(aarch64)
+                arm64|aarch64)
                 echo "Target Compile:aarch64(arm64)"
 
                         export ML16_CROSSCOMPILLING=1

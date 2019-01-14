@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "4.15.0-43-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/toolchains/arm-linux-toolChain.cmake")
+include("/home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/toolchains/aarch64-linux-toolchain.cmake")
 
 set(CMAKE_SYSTEM "Linux")
 set(CMAKE_SYSTEM_NAME "Linux")

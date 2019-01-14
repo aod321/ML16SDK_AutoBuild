@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe
+CMAKE_SOURCE_DIR = /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build
+CMAKE_BINARY_DIR = /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/testprint.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/testprint.dir/flags.make
 
 src/CMakeFiles/testprint.dir/printframe.cpp.o: src/CMakeFiles/testprint.dir/flags.make
 src/CMakeFiles/testprint.dir/printframe.cpp.o: ../src/printframe.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/testprint.dir/printframe.cpp.o"
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src && /usr/bin/arm-linux-gnueabihf-g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testprint.dir/printframe.cpp.o -c /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/src/printframe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/testprint.dir/printframe.cpp.o"
+	cd /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/src && /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testprint.dir/printframe.cpp.o -c /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/src/printframe.cpp
 
 src/CMakeFiles/testprint.dir/printframe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testprint.dir/printframe.cpp.i"
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src && /usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/src/printframe.cpp > CMakeFiles/testprint.dir/printframe.cpp.i
+	cd /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/src && /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/src/printframe.cpp > CMakeFiles/testprint.dir/printframe.cpp.i
 
 src/CMakeFiles/testprint.dir/printframe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testprint.dir/printframe.cpp.s"
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src && /usr/bin/arm-linux-gnueabihf-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/src/printframe.cpp -o CMakeFiles/testprint.dir/printframe.cpp.s
+	cd /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/src && /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/src/printframe.cpp -o CMakeFiles/testprint.dir/printframe.cpp.s
 
 src/CMakeFiles/testprint.dir/printframe.cpp.o.requires:
 
@@ -91,11 +91,12 @@ testprint_EXTERNAL_OBJECTS =
 bin/testprint-1.1: src/CMakeFiles/testprint.dir/printframe.cpp.o
 bin/testprint-1.1: src/CMakeFiles/testprint.dir/build.make
 bin/testprint-1.1: /opt/boost/lib/libboost_thread.so
+bin/testprint-1.1: /opt/poky/2.4.2/sysroots/aarch64-poky-linux/usr/lib/libpthread.so
 bin/testprint-1.1: /opt/ML16/lib/libML16.so
 bin/testprint-1.1: src/CMakeFiles/testprint.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/testprint"
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testprint.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src && $(CMAKE_COMMAND) -E cmake_symlink_executable ../bin/testprint-1.1 ../bin/testprint
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/testprint"
+	cd /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testprint.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/src && $(CMAKE_COMMAND) -E cmake_symlink_executable ../bin/testprint-1.1 ../bin/testprint
 
 bin/testprint: bin/testprint-1.1
 
@@ -110,10 +111,10 @@ src/CMakeFiles/testprint.dir/requires: src/CMakeFiles/testprint.dir/printframe.c
 .PHONY : src/CMakeFiles/testprint.dir/requires
 
 src/CMakeFiles/testprint.dir/clean:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src && $(CMAKE_COMMAND) -P CMakeFiles/testprint.dir/cmake_clean.cmake
+	cd /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/src && $(CMAKE_COMMAND) -P CMakeFiles/testprint.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/testprint.dir/clean
 
 src/CMakeFiles/testprint.dir/depend:
-	cd /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/src /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/src/CMakeFiles/testprint.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/src /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/src /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/src/CMakeFiles/testprint.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/testprint.dir/depend
 

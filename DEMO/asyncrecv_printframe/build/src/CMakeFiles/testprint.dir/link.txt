@@ -1,1 +1,1 @@
-/usr/bin/arm-linux-gnueabihf-g++      CMakeFiles/testprint.dir/printframe.cpp.o  -o ../bin/testprint-1.1 -rdynamic -lpthread /opt/boost/lib/libboost_thread.so /opt/ML16/lib/libML16.so -Wl,-rpath,/opt/boost/lib:/opt/ML16/lib: 
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++  --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux     CMakeFiles/testprint.dir/printframe.cpp.o  -o ../bin/testprint-1.1 -rdynamic -lpthread /opt/boost/lib/libboost_thread.so -lpthread /opt/ML16/lib/libML16.so -Wl,-rpath,/opt/boost/lib:/opt/ML16/lib: 

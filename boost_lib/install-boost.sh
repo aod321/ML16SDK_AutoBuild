@@ -20,7 +20,7 @@ while [ $# -gt 0 ]; do
         case "$1" in
                 arm)
                         echo "Installing..."
-                        $sh_c "cp -vr ./armhf/boost /opt/boost"
+                        $sh_c "cp -vr ./armhf/boost /opt"
                         echo "OK"
 
                         ;;
@@ -31,9 +31,9 @@ while [ $# -gt 0 ]; do
                         echo "OK"
 
                         ;;
-                arm64|aarch)
+                arm64|aarch64)
                         echo "Installing..."
-                        $sh_c "cp -vr ./aarch64/boost /opt/boost"
+                        $sh_c "cp -vr ./aarch64/boost /opt"
                         echo "OK"
 
                         ;;

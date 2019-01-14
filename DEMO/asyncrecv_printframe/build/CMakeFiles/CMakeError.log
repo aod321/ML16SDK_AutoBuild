@@ -1,25 +1,67 @@
-Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc 
+Build flags: -march=armv8-a;-mtune=cortex-a57.cortex-a53
+Id flags: 
 
-Run Build Command:"/usr/bin/make" "cmTC_ad558/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ad558.dir/build.make CMakeFiles/cmTC_ad558.dir/build
-make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ad558.dir/CheckSymbolExists.c.o
-/usr/bin/arm-linux-gnueabihf-gcc     -o CMakeFiles/cmTC_ad558.dir/CheckSymbolExists.c.o   -c /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_ad558
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad558.dir/link.txt --verbose=1
-/usr/bin/arm-linux-gnueabihf-gcc       CMakeFiles/cmTC_ad558.dir/CheckSymbolExists.c.o  -o cmTC_ad558 -rdynamic 
-CMakeFiles/cmTC_ad558.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0xe): undefined reference to `pthread_create'
-CheckSymbolExists.c:(.text+0x12): undefined reference to `pthread_create'
+The output was:
+1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find crt1.o: No such file or directory
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find crtbegin.o: No such file or directory
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lgcc
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lc
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lgcc
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find crtend.o: No such file or directory
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find crtn.o: No such file or directory
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_ad558.dir/build.make:97: recipe for target 'cmTC_ad558' failed
-make[1]: *** [cmTC_ad558] Error 1
-make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_ad558/fast' failed
-make: *** [cmTC_ad558/fast] Error 2
 
-File /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ 
+Build flags: -march=armv8-a;-mtune=cortex-a57.cortex-a53
+Id flags: 
+
+The output was:
+1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find crt1.o: No such file or directory
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find crti.o: No such file or directory
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find crtbegin.o: No such file or directory
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lstdc++
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lm
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lgcc
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lc
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lgcc_s
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lgcc
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find crtend.o: No such file or directory
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6e126/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6e126.dir/build.make CMakeFiles/cmTC_6e126.dir/build
+make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6e126.dir/CheckSymbolExists.c.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc  --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux    -o CMakeFiles/cmTC_6e126.dir/CheckSymbolExists.c.o   -c /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_6e126
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e126.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc  --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux      CMakeFiles/cmTC_6e126.dir/CheckSymbolExists.c.o  -o cmTC_6e126 -rdynamic 
+CMakeFiles/cmTC_6e126.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6e126.dir/build.make:97: recipe for target 'cmTC_6e126' failed
+make[1]: *** [cmTC_6e126] Error 1
+make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6e126/fast' failed
+make: *** [cmTC_6e126/fast] Error 2
+
+File /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -35,22 +77,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp
+Change Dir: /home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8c5a8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8c5a8.dir/build.make CMakeFiles/cmTC_8c5a8.dir/build
-make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8c5a8.dir/CheckFunctionExists.c.o
-/usr/bin/arm-linux-gnueabihf-gcc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8c5a8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_8c5a8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c5a8.dir/link.txt --verbose=1
-/usr/bin/arm-linux-gnueabihf-gcc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_8c5a8.dir/CheckFunctionExists.c.o  -o cmTC_8c5a8 -rdynamic -lpthreads 
-/usr/lib/gcc-cross/arm-linux-gnueabihf/5/../../../../arm-linux-gnueabihf/bin/ld: cannot find -lpthreads
+Run Build Command:"/usr/bin/make" "cmTC_5893d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5893d.dir/build.make CMakeFiles/cmTC_5893d.dir/build
+make[1]: Entering directory '/home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5893d.dir/CheckFunctionExists.c.o
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc  --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5893d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5893d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5893d.dir/link.txt --verbose=1
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc  --sysroot=/opt/poky/2.4.2/sysroots/aarch64-poky-linux  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_5893d.dir/CheckFunctionExists.c.o  -o cmTC_5893d -rdynamic -lpthreads 
+/opt/poky/2.4.2/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/7.3.0/real-ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_8c5a8.dir/build.make:97: recipe for target 'cmTC_8c5a8' failed
-make[1]: *** [cmTC_8c5a8] Error 1
-make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK-AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_8c5a8/fast' failed
-make: *** [cmTC_8c5a8/fast] Error 2
+CMakeFiles/cmTC_5893d.dir/build.make:97: recipe for target 'cmTC_5893d' failed
+make[1]: *** [cmTC_5893d] Error 1
+make[1]: Leaving directory '/home/yinzi/Desktop/ML16SDK_AutoBuild/DEMO/asyncrecv_printframe/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5893d/fast' failed
+make: *** [cmTC_5893d/fast] Error 2
 
 
